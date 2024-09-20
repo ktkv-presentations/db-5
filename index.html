@@ -22,136 +22,115 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>
-					Beautiful presentations
-				</h1>
-				<h2>New features</h2>
-				<ul>
-					<li>Nerd icons </li>
-					<li><code class="js">(inline) => code("highlighting")</code></li>
-					<li>Automatic QR Code generation</li>
-					<li>and much more!</li>
-				</ul>
-			</section>
-			<section>
-				<h1>
-					Custom TokyoNight theme
-				</h1>
-				<h2 class="fragment">That has</h2>
-				<h3 class="fragment">Multi</h3>
-				<h4 class="fragment">Level</h4>
-				<h5 class="fragment">Heading</h5>
-				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the
-					colorscheme!</h6>
+				<h1>Основные этапы проектирования БД</h1>
+				<img alt="https://ktkv-presentations.github.io/db-5/" data-type="qrcode">
 			</section>
 			<section>
 				<section>
-					<h1>Tailwind CSS</h1>
-					<div class="grid grid-cols-2 gap-8">
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div class="col-span-2">
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-					</div>
+					<h1>Определение требований к данным</h1>
+					<p>направлен на сбор информации о том, какие данные будут храниться в базе данных, как они будут
+						использоваться и какие ограничения накладываются на их обработку</p>
+					<h4>Этапы</h4>
+					<ul>
+						<li>Проведение встреч с пользователями и заинтересованными сторонами</li>
+						<li>Документирование требований в виде спецификаций и диаграмм</li>
+					</ul>
 				</section>
 				<section>
-					<h1>Custom classes</h1>
-					<div class="grid grid-cols-3 gap-8">
-						<div class="border-r">
-							<h5>border-r</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-o">
-							<h5>border-o</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-y">
-							<h5>border-y</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-					</div>
+					<h1>Анализ предметной области</h1>
+					<p>включает исследование системы, которая будет использовать БД, для выявления ключевых объектов (сущностей),
+						атрибутов и взаимосвязей между ними</p>
+					<h4>Этапы</h4>
+					<ul>
+						<li>Выявление всех сущностей и их характеристик</li>
+						<li>Определение связей между сущностями</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+						Концептуальное проектирование
+					</h1>
+					<p>процесс создания абстрактной модели данных, которая описывает основные объекты (сущности) и их взаимосвязи,
+						без учета конкретной СУБД</p>
+					<h4>Этапы</h4>
+					<ul>
+						<li>Построение ER-диаграммы</li>
+						<li>Определение первичных ключей для каждой сущности</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Логическое проектирование</h1>
+					<p>процесс преобразования концептуальной модели в логическую, где сущности превращаются в таблицы с четко
+						определенными атрибутами и связями</p>
+					<h4>Этапы</h4>
+					<ul>
+						<li>Нормализация данных</li>
+						<li>Определение внешних ключей для создания связей между таблицами</li>
+					</ul>
+				</section>
+				<section>
+					<h1>нормализация данных</h1>
+					<p>процесс разбиения данных на таблицы для устранения дублирования и улучшения целостности</p>
+				</section>
+				<section>
+					<h1>Физическое проектирование</h1>
+					<p>процесс преобразования логической модели данных в физическую модель, которая учитывает особенности
+						конкретной СУБД</p>
+					<h4>Этапы</h4>
+					<ul>
+						<li>Адаптация структуры данных под особенности выбранной СУБД</li>
+						<li>Оптимизация запросов для повышения производительности</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Тестирование</h1>
+					<p>проверка корректности работы базы данных перед её внедрением в эксплуатацию</p>
+					<br>
+					<h1>Внедрение</h1>
+					<p>процесс развёртывания базы данных в рабочей среде</p>
+					<ul>
+						<li>Создание тестовых данных для моделирования реальной нагрузки</li>
+						<li>Исправление ошибок, выявленных в процессе тестирования</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Поддержка и развитие</h1>
+					<p>процесс управления и оптимизации базы данных после её внедрения и внесения изменений в структуру БД по мере необходимости</p>
+					<ul><li>Обеспечение безопасности данных</li><li>Адаптация базы данных под новые требования и улучшение её производительности</li></ul>
 				</section>
 			</section>
 			<section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<div>
-						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
-					</div>
-					<pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
+				<section>
+					<h1>Концепция нормальных форм</h1>
+					<h2>Нормальная форма (НФ)</h2>
+					<p>набор правил, которые применяются к таблицам базы данных для улучшения их структуры</p>
 				</section>
-				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<h5>Inline code highlighting is now also supported!</h5>
-					<p>
-						Just wrap your code with <code>&lt;code&gt;</code> tag and get
-						highlighting like this <code class="js">const foo = () => {return bar}</code>!
-					</p>
+				<section>
+					<h1>Аномалии данных</h1>
+					<h2>Аномалия добавления</h2>
+					<p>Аномалия добавления возникает, когда из-за структуры таблицы невозможно добавить новую запись без ненужных данных</p>
+				</section>
+				<section>
+					<h1>Аномалии данных</h1>
+					<h2>Аномалия удаления</h2>
+					<p>Аномалия удаления возникает, когда удаление одной записи приводит к потере важной информации</p>
+				</section>
+				<section>
+					<h1>Аномалии данных</h1>
+					<h2>Аномалия изменения</h2>
+					<p>Аномалия изменения возникает, когда изменение одной записи требует внесения изменений во множество строк.</p>
 				</section>
 			</section>
 			<section>
-				<h1>Mermaid for beautiful diagrams!</h1>
-				<div class="mermaid">
-					<pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre>
-				</div>
-				<h4>Check documentation <a href="https://mermaid.js.org/config/usage.html">here</a>!</h4>
-			</section>
-			<section>
-				<h1>Now supports Nerd font icons!</h1>
-				<div>Nerdy project that adds icons to font itself</div>
-				<h6>Checkout their site for icons like this <a href="https://www.nerdfonts.com/">󰖟</a>!
-				</h6>
-			</section>
-			<section>
-				<h1>Now supports automatic QRCode generation!</h1>
-				<div>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" / &gt;</code> tag!</div>
-				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
-				</h6>
-			</section>
-			<section>
-				<h1>New changes on the way!</h1>
+				<section>
+					<h1>Процесс нормализации отношений</h1>
+					<h4>Основные этапы нормализации:</h4>
+					<ol>
+						<li>Удаление повторяющихся данных</li>
+						<li>Создание новых таблиц для независимых данных</li>
+						<li>Установление связей между таблицами с помощью ключей</li>
+					</ol>
+				</section>
 			</section>
 		</div>
 	</div>
